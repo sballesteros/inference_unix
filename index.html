@@ -88,16 +88,6 @@
               plug-and-play methods require only simulations from a model
             </blockquote>
 
-            <p>
-              The model can be arbitrarily complex:
-
-              <ul>
-                <li>Demographic stochasticity</li>
-                <li>Environmental stochasticity (non-correlated and correlated)</li>
-                <li>Observation noise</li>
-              </ul>
-            </p>
-
 	  </section>
 
           <section data-state="soothe">
@@ -105,13 +95,13 @@
 
             <ul>
               <li>
-                Deterministic (process) models: simplex, MCMC.
+                Deterministic (process) models: simplex, MCMC, ...
               </li>
               <li>
-                Stochastic models in a Gaussian world: Kalman filters (EKF, UKF).
+                Stochastic models in a Gaussian world: Kalman filters (EKF, UKF, ...).
               </li>
               <li>
-                Stochastic models: MIF, pMCMC, SMC<sup>2</sup>.
+                Stochastic models: MIF, pMCMC, SMC<sup>2</sup>, ...
               </li>
             </ul>
             
@@ -123,23 +113,21 @@
             <p>
               <ul>
                 <li>
-                  Deterministic (process) models: simplex, MCMC <br/>
+                  Deterministic (process) models: simplex, MCMC, ...<br/>
                   <span class="good"><strong>Fast</strong></span> but <span class="bad"><strong>approximative</strong></span>.
                 </li>
                 <li>
-                  Stochastic models in a Gaussian world: Kalman filters (EKF, UKF) <br/>
+                  Stochastic models in a Gaussian world: Kalman filters (EKF, UKF, ...) <br/>
                   <span class="good"><strong>Fast</strong></span> but <span class="bad"><strong>approximative</strong></span>.
                 </li>
                 <li>
-                  Stochastic models: MIF, pMCMC, SMC<sup>2</sup> <br/>
+                  Stochastic models: MIF, pMCMC, SMC<sup>2</sup>, ... <br/>
                   <span class="bad"><strong>Slow</strong></span> but <span class="good"><strong>exact</strong></span>.
                 </li>
               </ul>            
             </p>
 
-
             <hr>
-
 
             <ul>
               <li>
@@ -156,10 +144,7 @@
               </li>
             </ul>
 
-
           </section>
-
-
 
         </section>
 
@@ -192,7 +177,7 @@
         <section>
 
           <section>
-	    <h2>We need Plug-and-play<sup>2</sup></h2>
+	    <h2>Plug-and-play<sup>2</sup></h2>
 
             <p> 
               Semantic &rarr; Code &rarr; Inference
@@ -200,7 +185,8 @@
 
             <ul>
               <li>A layered formal grammar for model semantics,
-              playing well with symbolic calculus libraries.</li>
+                playing well with symbolic calculus libraries
+                (e.g <a href="http://sympy.org/">sympy</a>).</li>
               <li>Independant inference methods being able to be
                 communicate with each other (outside any framework) to
                 solve complex problems on <em>distributed computing
@@ -365,6 +351,8 @@
 	  <h1>Get involved</h1>
 
             <a href="https://github.com/plom/plom-sfi">https://github.com/plom/plom-sfi</a>
+            <img src="pict/gnu.png" alt="GNU logo"/>
+
 
 	</section>
 
